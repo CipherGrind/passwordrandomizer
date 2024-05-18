@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="pr.css">
+</head>
+<body>
+
+    <div class="header">
+        <h2>PASSWORD GENERATOR</h2>
+        <h6>created by: Jonathan Levin</h6>
+    </div>
+
+    <div class="container">
+        <br>
+        <label for="length">Length of Password:</label>
+        <input type="range" id="length" min="8" max="25" value="12">
+        <span id="lengthValue">12</span>
+        <br><br>
+        <label><input type="checkbox" id="uppercase" checked> Uppercase Letters</label>
+        <label><input type="checkbox" id="lowercase" checked> Lowercase Letters</label>
+        <label><input type="checkbox" id="numbers" checked> Numbers</label>
+        <label><input type="checkbox" id="special" checked> Special Characters</label>
+        <br>
+        <button onclick="generatePassword()">Generate Password</button>
+        <br>
+        <br>
+        <textarea id="password" rows="3" readonly></textarea>
+    </div>
+    <script src="pr.js"></script>
+</body>
+</html>
+
